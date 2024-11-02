@@ -65,9 +65,10 @@ const Navbar = () => {
 };
 
 // Desktop NavLink Component
-const NavLink = ({ href, children }) => (
+const NavLink = ({ href, children, target }) => (
   <a
     href={href}
+    target={target}
     className="text-gray-300 px-3 py-2 text-sm font-medium transition-colors duration-300 hover:text-blue-500"
   >
     <motion.span
@@ -81,9 +82,10 @@ const NavLink = ({ href, children }) => (
 );
 
 // Mobile NavLink Component
-const MobileNavLink = ({ href, children }) => (
+const MobileNavLink = ({ href, children, target }) => (
   <a
     href={href}
+    target={target}
     className="text-gray-300 block px-3 py-2 text-base font-medium transition-colors duration-300 hover:text-blue-500"
   >
     <motion.span
